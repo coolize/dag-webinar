@@ -30,7 +30,7 @@ with models.DAG(
 
     end_task = BashOperator(
     task_id="end_task",
-        bash_command='echo "========================== DAG Finish =========================="'
+        bash_command='echo "========================== DAG Finish test1 =========================="'
     )
 
     start_task >> print_hello >> end_task
