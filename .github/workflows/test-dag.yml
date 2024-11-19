@@ -27,6 +27,5 @@ jobs:
         run: |
           for dag_file in *.py; do
             echo "Validating $dag_file"
-            python -m py_compile $dag_file
-            python -c "from airflow.models import DagBag; DagBag().get_dag('$dag_file')"
+            python $dag_file
           done
