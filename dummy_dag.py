@@ -11,7 +11,7 @@ with models.DAG(
     'dummy-DAG',
     description="Dummy for checking",
     start_date=pendulum.datetime(2024, 9, 30, tz="Asia/Jakarta"),
-    schedule_interval='* 1 * * *',
+    schedule_interval='0 * * * *',
     max_active_runs=1,
     catchup=False,
     tags=['templated', 'TESTING'],

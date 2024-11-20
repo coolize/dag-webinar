@@ -19,7 +19,7 @@ with models.DAG(
     'ShopEZ_DAG',
     description="Doing ETL from PostgreSQL to GCS",
     start_date=pendulum.datetime(2024, 9, 30, tz="Asia/Jakarta"),
-    schedule_interval='* 1 * * *',
+    schedule_interval='0 * * * *',
     max_active_runs=1,
     catchup=False,
     tags=['webinar'],
