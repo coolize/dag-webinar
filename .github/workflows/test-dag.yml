@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.8'  # Use the Python version compatible with your Airflow setup
+          python-version: '3.12'  # Use the Python version compatible with your Airflow setup
 
       - name: Install Airflow and dependencies
         run: |
